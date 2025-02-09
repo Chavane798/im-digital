@@ -1,5 +1,7 @@
+"use client";
 import Introduction from "./component/introduction";
 import Services from "./component/services";
+import Contacts from "./component/contacts";
 
 export default async function Home() {
   return (
@@ -10,6 +12,8 @@ export default async function Home() {
         {/* Serviços */}
         <Services />
       </div>
+
+      <Contacts/>
     </>
   );
 }
