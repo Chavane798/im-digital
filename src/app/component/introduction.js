@@ -1,14 +1,14 @@
 export default async function Introduction() {
     const res = await fetch('http://localhost:1337/api/pages?populate=*', {
-      next: { revalidate: 10 }, // Revalida os dados a cada 10 segundos
+      next: { revalidate: 10 }, 
     });
   
     if (!res.ok) {
       throw new Error('Failed to fetch data');
     }
   
-    const data = await res.json(); // Obtém os dados da API
-    const pages = data.data; // Acessa a lista de páginas no campo `data`
+    const data = await res.json(); 
+    const pages = data.data;
   
     return ( 
     
