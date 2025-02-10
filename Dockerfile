@@ -1,7 +1,7 @@
 FROM node:18-alpine
 
 # Diretório de trabalho
-WORKDIR /app
+WORKDIR /usr/src/app
 
 # Copia os arquivos do projeto
 COPY ./ ./
