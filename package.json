@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest",
+    "start-strapi": "strapi develop"
   },
   "dependencies": {
     "react": "^19.0.0",
